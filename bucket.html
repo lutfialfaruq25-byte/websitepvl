@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVL-Bucket</title>
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background-color: #f3f3f3;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  height: 4rem;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #3a7d44;
+}
+
+/* --- Produk --- */
+    .produk {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .produk img{
+      width: 250px;
+      height: 200px;
+      border-radius: 15px;
+      object-fit: cover;
+      box-shadow: 0 3px 10px #29933033;
+    }
+      
+
+    .deskripsi {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .deskripsi h3 {
+      margin: 0;
+      color: hwb( 162 12% 46%);
+    }
+
+    .deskripsi p {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    
+    .info-row {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    
+    .kolom-kiri {
+      flex: 1;
+    }
+
+    
+    .kolom-kanan {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .box {
+      background-color: #f9fafb;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      border: 1px solid #e5e7eb;
+      transition: 0.3s;
+    }
+
+    .box:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+    }
+
+    .teknik {
+      background-color: #e8f0ff;
+    }
+
+    .bahan {
+      background-color: #e8f7ff;
+    }
+
+    .keuangan {
+      background-color: #fff9e6;
+    }
+
+    h4 {
+      margin-top: 0;
+      color: hwb(163 9% 69%);
+      margin-bottom: 10px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    ul, ol {
+      margin: 0;
+      padding-left: 20px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+
+.container h2 {
+     text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #0b3d2e;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+    margin: 90px auto;
+}
+
+/* Footer */
+footer {
+  background-color: #023020;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer img {
+  width: 100px;
+  height: 100px;
+  margin-top: 60px;
+  position: relative;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer .sosmed {
+  margin-top: 8px;
+}
+
+footer .sosmed a {
+  text-decoration: none;
+  margin: 0 5px;
+  font-size: 14px;
+  color: #fff;
+}
+
+footer .sosmed a:hover {
+  text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+      <header>
+    <img src="asset/Logo_4-removebg-previewentod.png" alt="Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html">ABOUT</a></li>
+        <li><a href="index.html">ANALISIS</a></li>
+        <li><a href="index.html">PRODUCT</a></li>
+        <li><a href="index.html">MYTEAM</a></li>
+        <li><a href="index.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Kerajinan Bucket Cantik</h2>
+      <div class="produk">
+      <img src="asset/Bucket.jpeg" alt="Bucket">
+      <div class="deskripsi">
+        <h3>Bucket</h3>
+        <p>Bucket ini dibuat dari bahan kain flanel warna-warni yang disusun membentuk bunga cantik.
+        Cocok untuk hadiah ulang tahun, wisuda, atau dekorasi kamar agar tampak indah dan berwarna.</p>
+      </div>
+    </div>
+
+    <!-- Dua kolom utama -->
+    <div class="info-row">
+      <!-- Kiri -->
+      <div class="kolom-kiri">
+        <div class="box teknik">
+          <h4>Teknik</h4>
+          <ol>
+            <li>Potong kain flanel dgn ukuran tertentu</li>
+            <li>Gulung sampai di lipat membentuk kelopak bunga</li>
+            <li>Rekatkan menggunakan lem</li>
+            <li>Gunakan kawat bunga atau stik kayu</li>
+            <li>Bungkus dengan floral tape hijau agar menyerupai batang</li>
+            <li>Gabungkan beberapa bunga jadi satu</li>
+            <li>Bungkus dengan kertas buket agar lebih rapi</li>
+            <li>Ikat bawahnya menggunakan pita</li>
+            <li>gulung kain yang sudah di kerutkan di sekeliling ujung kawat bunga</li>
+            <li>rekatkan bagian bawah gulungan dengan lem tembak</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Kanan -->
+      <div class="kolom-kanan">
+        <div class="box bahan">
+          <h4>Alat dan Bahan</h4>
+          <ul>
+            <li>Kain flanel warna-warni</li>
+            <li>Pita satin</li>
+            <li>Kawat bunga</li>
+            <li>Gunting</li>
+            <li>Lem tembak</li>
+            <li>Kertas buket / wrapping</li>
+          </ul>
+        </div>
+
+        <div class="box keuangan">
+          <h4>Informasi Keuangan</h4>
+          <p><strong>Modal:</strong> Rp 100.000</p>
+          <p><strong>Harga Jual:</strong> Rp 150.000</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer -->
+<footer>
+    <img src="asset/Logo_4-removebg-preview.png" alt="logo"/>
+  <p>&copy;  2025 SAMPAH JADI RUPIAH. All rights reserved.</p>
+  <div class="sosmed">
+    <a href="">Whatsapp</a> |
+    <a href="https://www.instagram.com/lutfi_alfrq?igsh=MWI3ZDJoMWZmNWoyZw==">Instagram</a> |
+    <a href="https://x.com/aeyshaa_cest?t=oGMaTp4t-ZfmusLmrjRnrA&s=09">Twitter</a>
+  </div>
+</footer>
+</body>
+</html>
